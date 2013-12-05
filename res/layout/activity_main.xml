@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+     <RelativeLayout 
+         android:id="@+id/container"
+         android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	>
+     <com.example.custom_camera.Preview 
+           		 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/preview"
+                 />
+        	<TextView
+	         	android:id="@+id/txt_mark"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	            android:textSize="30sp"
+	            android:textColor="#0000ff"
+	            android:gravity="center"
+	        	android:text="Take picture for whom you wanna fuck!"
+        	 />
+     </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <Button android:id="@+id/bt_camera_takepicture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="take picture"
+                            />
+                 
+    <Button android:id="@+id/bt_camera_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="save picture"
+               />
+    <Button android:id="@+id/bt_camera_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="cancel"/>
+    </LinearLayout>
+</RelativeLayout>
